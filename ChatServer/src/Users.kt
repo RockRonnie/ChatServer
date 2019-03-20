@@ -1,3 +1,6 @@
+/* ChatServer app
+Created by: Roni Jumpponen */
+
 //Users stores the user information and makes sure there are no duplicate users.
 object Users {
     private val userList = mutableSetOf<String>()

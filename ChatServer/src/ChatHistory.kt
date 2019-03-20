@@ -1,7 +1,10 @@
-//ChatHistory acts as a hub for storing chat information and is also responsible for spreading it to users
+/* ChatServer app
+Created by: Roni Jumpponen */
+
+//ChatHistory acts as a hub for storing chat information and is also responsible for publishing it to users
 object ChatHistory : ChatHistoryObservable {
     val history = mutableListOf<ChatMessage>()
-    val observers = mutableListOf<ChatHistoryObserver>()
+    private val observers = mutableListOf<ChatHistoryObserver>()
 
     fun insert(message: ChatMessage) {
         history.add(message)

@@ -2,6 +2,9 @@ import java.io.PrintStream
 import java.net.Socket
 import java.util.*
 
+/* ChatServer app
+Created by: Roni Jumpponen */
+
 //CommandInterpreter handles inputs coming from the socket and has most of the user functionalities
 class CommandInterpreter(s: Socket) : Runnable, ChatHistoryObserver {
 

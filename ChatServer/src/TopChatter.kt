@@ -1,3 +1,6 @@
+/* ChatServer app
+Created by: Roni Jumpponen */
+
 //TopChatter counts the sent messages by each user and makes a sorted top 4 list based on who has sent the most.
 object TopChatter : ChatHistoryObserver {
 
